@@ -93,6 +93,40 @@ public class ALU {
 		add();
 	}
 	
+	/*Performs bitwise AND operation on the binary arrays and stores said value in the binary
+	result array.*/
+	protected void and() 
+	{
+		for (int i = 0; i < MAX_BIT_LENGTH; i++)
+		{
+			if (binaryValue1[i] == 1 && binaryValue2[i] == 1) 
+			{
+				binaryResult[i] = 1;
+			}
+			else 
+			{
+				binaryResult[i] = 0;
+			}
+		}
+	}
+	
+	/*Performs bitwise OR operation on the binary arrays and stores said value in the binary
+	result array.*/
+	protected void or() 
+	{
+		for (int i = 0; i < MAX_BIT_LENGTH; i++)
+		{
+			if (binaryValue1[i] == 1 || binaryValue2[i] == 1) 
+			{
+				binaryResult[i] = 1;
+			}
+			else 
+			{
+				binaryResult[i] = 0;
+			}
+		}
+	}
+	
 	/*Given a signed positive integer and a marker to the desired binary
 	array to be set, the corresponding array is given the value of
 	the integer in binary.*/

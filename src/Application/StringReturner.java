@@ -166,11 +166,11 @@ public class StringReturner
 	binary and decimal value.*/
 	private String and() 
 	{
-		
+		alu.and();
 		return alu.printBinaryValue(1) + "and " +
 				 alu.printBinaryValue(2) +
-		"\nBinary: " + alu.printBinaryValue(2) + 
-				"Decimal Value: " + alu.getBinaryValue(2);
+		"\nBinary: " + alu.printBinaryValue(3) + 
+				"Decimal Value: " + alu.getBinaryValue(3);
 	}
 	
 	/*Helper method used to perform the or operation between two
@@ -178,10 +178,11 @@ public class StringReturner
 	binary and decimal value.*/
 	private String or() 
 	{
+		alu.or();
 		return alu.printBinaryValue(1) + "or " +
 				 alu.printBinaryValue(2) +
-		"\nBinary: " + alu.printBinaryValue(1) + 
-				"Decimal Value: " + alu.getBinaryValue(1);
+		"\nBinary: " + alu.printBinaryValue(3) + 
+				"Decimal Value: " + alu.getBinaryValue(3);
 	}
 	
 	/*Helper method used to perform the compare operation between
